@@ -3,7 +3,7 @@
 /**
  * main - puts() is used instead of printf
  * description - printing text using puts
- * return - 0
+ * return - 0 means success
  */
 
 int main(void)
