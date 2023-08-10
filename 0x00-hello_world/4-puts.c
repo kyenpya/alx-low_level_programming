@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/* 
- * main - puts()
+/**
+ * main - puts() is used instead of printf
  * description - printing text using puts
  * return - 0
  */
