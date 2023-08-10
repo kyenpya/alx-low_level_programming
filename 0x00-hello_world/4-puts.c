@@ -2,8 +2,8 @@
 
 /**
  * main - puts() is used instead of printf
- * description - printing text using puts
- * return - 0 means success
+ * Description - printing text using puts
+ * Return: 0 (means success)
  */
 
 int main(void)
