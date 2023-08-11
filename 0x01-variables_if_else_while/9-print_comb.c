@@ -10,20 +10,15 @@ int main(void)
 {
 	int coms;
 
-	for (coms = 0; coms <= 9; coms++)
+	for (coms = 0; coms < 10; coms++)
 	{
 		putchar(coms + '0');
 		if (coms != 9)
 		{
-			if (coms < 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
-
+			putchar(44);
+			putchar(32);
 		}
 	}
-	putchar('$');
-	putchar('\n');
+	putchar(36);
 	return (0);
 }
