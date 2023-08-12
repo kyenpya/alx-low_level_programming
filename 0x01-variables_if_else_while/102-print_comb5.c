@@ -8,24 +8,37 @@
 
 int main(void)
 {
-	int e;
-	int f;
+	int c, d, e, f;
 
-	for (e = 0; e < 100; ++e)
+	for (c = 48; c <= 57; c++)
 	{
-		for (f = 0; e < 100; ++f)
+		for (d = 48; d <= 57; d++)
 		{
-			putchar((e / 10) + '0');
-			putchar((e % 10) + '0');
-			putchar(' ');
-			putchar((f / 10) + '0');
-			putchar((f % 10) + '0');
-				if (e != 98 || f != 99)
+			for (e = 48; e <= 57; e++)
+			{
+				for (f = 48; f <= 57; f++)
 				{
-					putchar(',');
-					putchar(' ');
+					if (((e + f) > (c + d) && e >= c) || c < e)
+					{
+						putchar(c);
+						putchar(d);
+						putchar(' ');
+						putchar(e);
+						putchar(f);
+					if (c + d + e + f == 227 && c == 57)
+					{
+						break;
+					}
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
+					}
 				}
+			}
 		}
 	}
-	return (0);
+putchar('\n');
+return (0);
 }
