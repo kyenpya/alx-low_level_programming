@@ -1,0 +1,1 @@
+This project focuses on enhancing the understanding of and proficiency in working with pointers, arrays, and strings in the C programming language. Various functions will be defined, to manipulate strings and arrays of characters, ultimately helping to gain a deeper understanding of these fundamental concepts.
