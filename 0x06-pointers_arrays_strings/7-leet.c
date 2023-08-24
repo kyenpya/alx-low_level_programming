@@ -1,31 +1,26 @@
 #include "main.h"
 
 /**
- * leet - encodes string into 1337
- * @str: input string
- * Return: pointer to modified string
+ * leet - encodes into 1337
+ * @n: input value
+ * Return: n value
  */
 
-char *leet(char *str)
+char *leet(char *n)
 {
-	char *ptr = str;
-	char c;
+	int i, j;
+	char set[] = "aAeEoOtTlL";
+	char get[] = "4433007711";
 
-	while (*str)
+	for (i = 0; n[i] != '\0'; i++)
 	{
-		c = *str;
-
-		if (c == 'a' || c == 'A')
-			str = '4';
-		else if (c == 'e' || c == 'E')
-			*str = '3';
-		else if (c == 'o' || c == 'O')
-			*str = '0';
-		else if (c == 't' || c == 'T')
-			*str = '7';
-		else if (c == 'l' || c == 'L')
-			*str = '1';
-		str++;
+		for (j = 0; j < 10; j++)
+		{
+			if (n[i] == set[j])
+			{
+				n[i] = get[j];
+			}
+		}
 	}
-	return (ptr);
+	return (n);
 }
