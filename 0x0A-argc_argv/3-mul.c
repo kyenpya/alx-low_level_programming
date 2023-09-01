@@ -10,15 +10,11 @@
 
 int main(int argc, char *argv[])
 {
-	int numa = atoi(argv[1]);
-	int numb = atoi(argv[2]);
-	int result = numa * numb;
-
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	printf("%d\n", result);
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
