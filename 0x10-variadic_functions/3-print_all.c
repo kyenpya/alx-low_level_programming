@@ -31,7 +31,7 @@ void print_all(const char * const format, ...)
 				case 's':
 					alps = va_arg(args, char *);
 					if (!alps)
-						alps = "nil";
+						alps = "(nil)";
 					printf("%s%s", sap, alps);
 					break;
 				default:
@@ -42,6 +42,6 @@ void print_all(const char * const format, ...)
 			i++;
 		}
 	}
-	va_end(args);
 	printf("\n");
+	va_end(args);
 }
